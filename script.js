@@ -84,3 +84,5 @@ let m = Math.floor(timeLeft / 60);
 let s = timeLeft % 60;
 document.getElementById("pomoDisplay").innerText = 
     `${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
+// تأكد عند تحديث الأرقام إنك بتستخدم toString()
+document.getElementById("minutes").innerText = Number(25).toLocaleString('en-US');
