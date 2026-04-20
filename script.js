@@ -79,3 +79,8 @@ window.onload = function() {
     };
     document.getElementById('dateDisplay').innerText = new Date().toLocaleDateString('ar-EG', { weekday: 'long', day: 'numeric', month: 'long' });
 };
+// مثال لتعديل عرض أرقام التايمر
+let m = Math.floor(timeLeft / 60);
+let s = timeLeft % 60;
+document.getElementById("pomoDisplay").innerText = 
+    `${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
