@@ -121,3 +121,25 @@ li { background: rgba(255,255,255,0.03); padding: 12px 20px; border-radius: 15px
     font-size: 1.8rem;
     color: var(--primary);
 }
+/* تنسيق الخانات التي تحتوي على أرقام (الدقائق، العداد، إلخ) */
+.number-box, .time-box span, #pomoDisplay, .minutes-input {
+    font-family: 'Orbitron', sans-serif; /* خط رقمي فخم */
+    font-size: 1.8rem; /* حجم مناسب */
+    font-weight: 700;
+    color: var(--primary); /* اللون اللي بتختاره */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 0 0 10px rgba(var(--primary-rgb), 0.5); /* توهج بسيط */
+}
+
+/* تنسيق الدائرة اللي فيها رقم 25 تحديداً */
+.minutes-display {
+    border: 2px solid var(--primary);
+    border-radius: 50px; /* تجعلها بيضاوية زي الصورة */
+    padding: 5px 20px;
+    background: rgba(255, 255, 255, 0.05);
+    min-width: 80px;
+    display: inline-block;
+}
