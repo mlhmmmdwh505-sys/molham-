@@ -87,3 +87,37 @@ li { background: rgba(255,255,255,0.03); padding: 12px 20px; border-radius: 15px
 .store-grid { display: flex; gap: 10px; margin-top: 15px; }
 .item { flex: 1; background: rgba(34, 197, 94, 0.05); padding: 12px; border-radius: 20px; cursor: pointer; border: 1px solid transparent; transition: 0.3s; }
 .item:hover { border-color: #22c55e; background: rgba(34, 197, 94, 0.1); transform: scale(1.05); }
+/* تنسيق أرقام العداد (سنة، يوم، ساعة) */
+.time-box span {
+    font-family: 'Orbitron', sans-serif; /* خط رقمي فخم */
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--primary);
+    text-shadow: 0 0 10px rgba(var(--primary-rgb), 0.5); /* توهج خفيف */
+    display: block;
+}
+
+/* تنسيق أرقام التايمر الكبير (25:00) */
+.timer-display {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 5rem; /* كبّرنا الحجم عشان الهيبة */
+    font-weight: 900;
+    color: var(--primary);
+    text-shadow: 0 0 20px var(--primary);
+    letter-spacing: 5px;
+    margin: 20px 0;
+}
+
+/* تنسيق الكلمات (سنة، يوم، ساعة) */
+.time-box p, h1, h3, label {
+    font-family: 'Cairo', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0;
+}
+
+/* تعديل بسيط لجدول حلم التخرج لجعل الأرقام واضحة */
+.grad-table td span {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.8rem;
+    color: var(--primary);
+}
